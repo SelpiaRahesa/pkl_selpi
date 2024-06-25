@@ -3,9 +3,9 @@
         <div class="container">
             <div class="header-top">
                 <div class="header-profile">
-                    <a href="user-profile.html"><span>Account</span></a>
-                    <a href="order.html"><span>Track Order</span></a>
-                    <a href="faq.html"><span>Support</span></a>
+                    <a href="{{url('user')}}"><span>Account</span></a>
+                    <a href="{{url('order')}}"><span>Track Order</span></a>
+                    <a href="{{url('faq')}}"><span>Support</span></a>
                 </div>
                 <div class="header-contact d-none d-lg-block">
                     <a href="#">
@@ -21,7 +21,7 @@
             <div class="header-center">
                 <div class="logo">
                     <a href="{{url('/')}}">
-                        <img src="./front/assets/images/logos/logo.webp" alt="logo">
+                        <img src="{{asset('./front/assets/images/logos/logo.webp')}}" alt="logo">
                     </a>
                 </div>
                 <div class="header-cart-items">
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="header-compaire">
-                        <a href="compaire.html" class="cart-item">
+                        <a href="{{url('compaire')}}" class="cart-item">
                             <span>
                                 <svg width="34" height="27" viewBox="0 0 34 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +91,7 @@
                         </a>
                     </div>
                     <div class="header-favourite">
-                        <a href="wishlist.html" class="cart-item">
+                        <a href="{{url('whislist')}}" class="cart-item">
                             <span>
                                 <svg width="35" height="27" viewBox="0 0 35 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@
                         </a>
                     </div>
                     <div class="header-cart">
-                        <a href="cart.html" class="cart-item">
+                        <a href="{{url('cart')}}" class="cart-item">
                             <span>
                                 <svg width="35" height="28" viewBox="0 0 35 28" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -233,14 +233,14 @@
                                     <h5 class="wrapper-title">$60</h5>
                                 </div>
                                 <div class="cart-btn">
-                                    <a href="cart.html" class="shop-btn view-btn">View Cart</a>
-                                    <a href="checkout.html" class="shop-btn checkout-btn">Checkout Now</a>
+                                    <a href="{{url('cart')}}" class="shop-btn view-btn">View Cart</a>
+                                    <a href="{{url('checkout')}}" class="shop-btn checkout-btn">Checkout Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="header-user">
-                        <a href="user-profile.html">
+                        <a href="{{url('user')}}">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                                     class="fill-current">
@@ -272,7 +272,7 @@
             <a href="index.html" class="mobile-header-logo">
                 <img src="./front/assets/images/logos/logo.webp" alt="logo">
             </a>
-            <a href="cart.html" class="header-cart cart-item">
+            <a href="{{url('cart')}}" class="header-cart cart-item">
                 <span>
                     <svg width="35" height="28" viewBox="0 0 35 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -300,7 +300,7 @@
                 <div class="header-top">
                     <div class="header-cart ">
                         <div class="header-compaire">
-                            <a href="compaire.html" class="cart-item">
+                            <a href="{{url('compaire')}}" class="cart-item">
                                 <span>
                                     <svg width="34" height="27" viewBox="0 0 34 27" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -323,7 +323,7 @@
                             </a>
                         </div>
                         <div class="header-favourite">
-                            <a href="wishlist.html" class="cart-item">
+                            <a href="{{url('whislist')}}" class="cart-item">
                                 <span>
                                     <svg width="35" height="27" viewBox="0 0 35 27" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -351,7 +351,7 @@
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M13.9708 16.4151C12.5227 17.4021 10.9758 17.9723 9.27353 18.0062C5.58462 18.0802 2.75802 16.483 1.05056 13.1945C-1.76315 7.77253 1.33485 1.37571 7.25086 0.167548C12.2281 -0.848249 17.2053 2.87895 17.7198 7.98579C17.9182 9.95558 17.5566 11.7939 16.5852 13.5061C16.4512 13.742 16.483 13.8725 16.6651 14.0553C18.2412 15.6386 19.8112 17.2272 21.3735 18.8244C22.1826 19.6513 22.2058 20.7559 21.456 21.4932C20.7697 22.1678 19.7047 22.1747 18.9764 21.4793C18.3623 20.8917 17.7774 20.2737 17.1796 19.6688C16.118 18.5929 15.0564 17.5153 13.9708 16.4151ZM2.89545 9.0364C2.91692 12.4172 5.59664 15.1164 8.91967 15.1042C12.2384 15.092 14.9138 12.3493 14.8889 8.98505C14.864 5.63213 12.1826 2.92508 8.89047 2.92857C5.58204 2.93118 2.87397 5.68958 2.89545 9.0364Z"
+                                d="M13.9708 16.4151C12.5227 17.4021 10.9758 ro17.9723 9.27353 18.0062C5.58462 18.0802 2.75802 16.483 1.05056 13.1945C-1.76315 7.77253 1.33485 1.37571 7.25086 0.167548C12.2281 -0.848249 17.2053 2.87895 17.7198 7.98579C17.9182 9.95558 17.5566 11.7939 16.5852 13.5061C16.4512 13.742 16.483 13.8725 16.6651 14.0553C18.2412 15.6386 19.8112 17.2272 21.3735 18.8244C22.1826 19.6513 22.2058 20.7559 21.456 21.4932C20.7697 22.1678 19.7047 22.1747 18.9764 21.4793C18.3623 20.8917 17.7774 20.2737 17.1796 19.6688C16.118 18.5929 15.0564 17.5153 13.9708 16.4151ZM2.89545 9.0364C2.91692 12.4172 5.59664 15.1164 8.91967 15.1042C12.2384 15.092 14.9138 12.3493 14.8889 8.98505C14.864 5.63213 12.1826 2.92508 8.89047 2.92857C5.58204 2.93118 2.87397 5.68958 2.89545 9.0364Z"
                                 fill="black"></path>
                         </svg>
                     </span>
@@ -360,7 +360,7 @@
                 <div class="category-dropdown">
                     <ul class="category-list">
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -386,7 +386,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -412,7 +412,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -438,7 +438,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -464,7 +464,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -490,7 +490,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -516,7 +516,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -542,7 +542,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -568,7 +568,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -593,7 +593,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -619,7 +619,7 @@
                             </a>
                         </li>
                         <li class="category-list-item">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <div class="dropdown-item d-flex justify-content-between align-items-center">
                                     <div class="dropdown-list-item d-flex">
                                         <span class="dropdown-img">
@@ -671,7 +671,7 @@
                     <div class="category-dropdown position-absolute" id="subMenu">
                         <ul class="category-list">
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item">
                                         <div class="dropdown-list-item">
                                             <span class="dropdown-img">
@@ -697,7 +697,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -723,7 +723,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -749,7 +749,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -775,7 +775,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -801,7 +801,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -827,7 +827,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -853,7 +853,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -879,7 +879,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -905,7 +905,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -931,7 +931,7 @@
                                 </a>
                             </li>
                             <li class="category-list-item">
-                                <a href="product-sidebar.html">
+                                <a href="{{url('shop')}}">
                                     <div class="dropdown-item d-flex justify-content-between align-items-center">
                                         <div class="dropdown-list-item d-flex">
                                             <span class="dropdown-img">
@@ -967,7 +967,7 @@
                             </a>
                         </li>
                         <li class="mega-menu">
-                            <a href="product-sidebar.html">
+                            <a href="{{url('shop')}}">
                                 <span class="list-text">Shop</span>
                                 <span>
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
@@ -990,25 +990,25 @@
                                     <div class="menu-list">
                                         <h5 class="menu-title">Dresses</h5>
                                         <ul>
-                                            <li><a href="product-sidebar.html">Shirt</a></li>
-                                            <li><a href="product-sidebar.html">Skart</a></li>
-                                            <li><a href="product-sidebar.html"> T-Shirt</a></li>
+                                            <li><a href="{{url('shop')}}">Shirt</a></li>
+                                            <li><a href="{{url('shop')}}">Skart</a></li>
+                                            <li><a href="{{url('shop')}}"> T-Shirt</a></li>
                                         </ul>
                                     </div>
                                     <div class="menu-list">
                                         <h5 class="menu-title">Bags</h5>
                                         <ul>
-                                            <li><a href="product-sidebar.html">HandBags</a></li>
-                                            <li><a href="product-sidebar.html">Mobile Bags</a></li>
-                                            <li><a href="product-sidebar.html">School Bags</a></li>
+                                            <li><a href="{{url('shop')}}">HandBags</a></li>
+                                            <li><a href="{{url('shop')}}">Mobile Bags</a></li>
+                                            <li><a href="{{url('shop')}}">School Bags</a></li>
                                         </ul>
                                     </div>
                                     <div class="menu-list">
                                         <h5 class="menu-title">Cosmetics</h5>
                                         <ul>
-                                            <li><a href="product-sidebar.html">Liptics</a></li>
-                                            <li><a href="product-sidebar.html">Foundation</a></li>
-                                            <li><a href="product-sidebar.html"> Eye Liner</a></li>
+                                            <li><a href="{{url('shop')}}">Liptics</a></li>
+                                            <li><a href="{{url('shop')}}">Foundation</a></li>
+                                            <li><a href="{{url('shop')}}"> Eye Liner</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1018,7 +1018,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{url('pages')}}">
                                 <span class="list-text">Pages</span>
                                 <span>
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
@@ -1037,12 +1037,12 @@
                                 </span>
                             </a>
                             <ul class="header-sub-menu">
-                                <li><a href="product-info.html">Product-details</a></li>
-                                <li><a href="privacy.html">Privacy Policy</a></li>
-                                <li><a href="terms.html">Terms & Condition</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="product-sidebar.html">Shop Category Icon</a></li>
-                                <li><a href="product-sidebar.html">Shop List View</a></li>
+                                <li><a href="{{url('pages')}}">Product-details</a></li>
+                                <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
+                                <li><a href="{{url('terms')}}">Terms & Condition</a></li>
+                                <li><a href="{{url('faq')}}">FAQ</a></li>
+                                <li><a href="{{url('shop')}}">Shop Category Icon</a></li>
+                                <li><a href="{{url('shop')}}">Shop List View</a></li>
                             </ul>
                         </li>
                         <li>
@@ -1051,15 +1051,15 @@
                             </a>
                         </li>
                         <li>
-                            <a href="blogs.html">
+                            <a href="{{url('blogs')}}">
                                 <span class="list-text">Blog</span>
                             </a>
                             <ul class="header-sub-menu">
-                                <li><a href="blogs-details.html">Blog-details</a></li>
+                                <li><a href="{{url('blogs_detail')}}">Blog-details</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="user-profile.html">
+                            <a href="{{url('user')}}">
                                 <span class="list-text">User Dashboard</span>
                             </a>
                         </li>
@@ -1071,7 +1071,7 @@
                     </ul>
                 </div>
                 <div class="header-vendor-btn">
-                    <a href="become-vendor.html" class="shop-btn">
+                    <a href="{{url('become')}}" class="shop-btn">
                         <span class="list-text shop-text">Became Vendor</span>
                         <span class="icon">
                             <svg width="24" height="16" viewBox="0 0 24 16" fill="none"

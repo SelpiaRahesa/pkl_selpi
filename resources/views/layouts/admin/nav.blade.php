@@ -93,8 +93,8 @@
                         <i class="mdi mdi-power me-1 mdi-20px"></i>
                         <span class="align-middle">Log Out</span>
                       </a>
-                      <form action="{{route('logout')}}" method="POST" id="logout-form"></form>
-                      @csrf
+                      <form action="{{route('logout')}}" method="POST" id="logout-form">@csrf</form>
+
                     </li>
                   </ul>
                 </li>
